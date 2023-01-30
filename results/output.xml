@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.7.3 on win32)" generated="20230130 19:56:32.793" rpa="false" schemaversion="3">
+<suite id="s1" name="IHMTests" source="C:\Users\halif\OneDrive\Bureau\project_fyc\correction\front\Login-Subscription-app\robot_tests\IHMTests.robot">
+<test id="s1-t1" name="Inscription" line="6">
+<kw name="Inscription">
+<arg>prenom</arg>
+<arg>nom</arg>
+<arg>email@gmail.com</arg>
+<arg>monAdresse</arg>
+<arg>ville</arg>
+<arg>75000</arg>
+<arg>0123456789</arg>
+<arg>useruser</arg>
+<arg>password1234</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>http://localhost:3000/signup</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230130 19:56:33.015" level="INFO">Opening browser 'chrome' to base url 'http://localhost:3000/signup'.</msg>
+<status status="PASS" starttime="20230130 19:56:33.015" endtime="20230130 19:56:35.030"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Inscription</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230130 19:56:35.030" endtime="20230130 19:56:35.077"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>firstName</arg>
+<arg>${prenom}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230130 19:56:35.078" level="INFO">Typing text 'prenom' into text field 'firstName'.</msg>
+<status status="PASS" starttime="20230130 19:56:35.077" endtime="20230130 19:56:35.221"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>lastName</arg>
+<arg>${nom}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230130 19:56:35.221" level="INFO">Typing text 'nom' into text field 'lastName'.</msg>
+<status status="PASS" starttime="20230130 19:56:35.221" endtime="20230130 19:56:35.347"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>email</arg>
+<arg>${mail}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230130 19:56:35.348" level="INFO">Typing text 'email@gmail.com' into text field 'email'.</msg>
+<status status="PASS" starttime="20230130 19:56:35.348" endtime="20230130 19:56:35.543"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>adress</arg>
+<arg>${adresse}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230130 19:56:35.543" level="INFO">Typing text 'monAdresse' into text field 'adress'.</msg>
+<status status="PASS" starttime="20230130 19:56:35.543" endtime="20230130 19:56:35.689"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>city</arg>
+<arg>${ville}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230130 19:56:35.690" level="INFO">Typing text 'ville' into text field 'city'.</msg>
+<status status="PASS" starttime="20230130 19:56:35.689" endtime="20230130 19:56:35.813"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>postIndex</arg>
+<arg>${codePostale}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230130 19:56:35.814" level="INFO">Typing text '75000' into text field 'postIndex'.</msg>
+<status status="PASS" starttime="20230130 19:56:35.814" endtime="20230130 19:56:35.925"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>phoneNumber</arg>
+<arg>${numero}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230130 19:56:35.926" level="INFO">Typing text '0123456789' into text field 'phoneNumber'.</msg>
+<status status="PASS" starttime="20230130 19:56:35.926" endtime="20230130 19:56:36.058"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>username</arg>
+<arg>${nomUtilisateur}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230130 19:56:36.059" level="INFO">Typing text 'useruser' into text field 'username'.</msg>
+<status status="PASS" starttime="20230130 19:56:36.058" endtime="20230130 19:56:36.181"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>password</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20230130 19:56:36.182" level="INFO">Typing password into text field 'password'.</msg>
+<msg timestamp="20230130 19:56:36.229" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20230130 19:56:36.317" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20230130 19:56:36.182" endtime="20230130 19:56:36.317"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>Inscription</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230130 19:56:36.318" level="INFO">Clicking button 'Inscription'.</msg>
+<status status="PASS" starttime="20230130 19:56:36.318" endtime="20230130 19:56:36.411"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>accueil</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230130 19:56:36.412" endtime="20230130 19:56:36.645"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230130 19:56:36.645" endtime="20230130 19:56:38.846"/>
+</kw>
+<status status="PASS" starttime="20230130 19:56:33.014" endtime="20230130 19:56:38.846"/>
+</kw>
+<status status="PASS" starttime="20230130 19:56:33.014" endtime="20230130 19:56:38.847"/>
+</test>
+<test id="s1-t2" name="Connexion" line="8">
+<kw name="Connexion">
+<arg>useruser</arg>
+<arg>password1234</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>http://localhost:3000/login</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230130 19:56:38.849" level="INFO">Opening browser 'chrome' to base url 'http://localhost:3000/login'.</msg>
+<status status="PASS" starttime="20230130 19:56:38.849" endtime="20230130 19:56:40.670"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Inscription</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230130 19:56:40.670" endtime="20230130 19:56:40.690"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>username</arg>
+<arg>${nomUtilisateur}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230130 19:56:40.691" level="INFO">Typing text 'useruser' into text field 'username'.</msg>
+<status status="PASS" starttime="20230130 19:56:40.691" endtime="20230130 19:56:40.781"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>password</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20230130 19:56:40.781" level="INFO">Typing password into text field 'password'.</msg>
+<msg timestamp="20230130 19:56:40.814" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20230130 19:56:40.900" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20230130 19:56:40.781" endtime="20230130 19:56:40.900"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>Connexion</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230130 19:56:40.901" level="INFO">Clicking button 'Connexion'.</msg>
+<status status="PASS" starttime="20230130 19:56:40.900" endtime="20230130 19:56:40.988"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>accueil</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230130 19:56:40.988" endtime="20230130 19:56:41.225"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230130 19:56:41.225" endtime="20230130 19:56:43.438"/>
+</kw>
+<status status="PASS" starttime="20230130 19:56:38.849" endtime="20230130 19:56:43.439"/>
+</kw>
+<status status="PASS" starttime="20230130 19:56:38.848" endtime="20230130 19:56:43.439"/>
+</test>
+<test id="s1-t3" name="Connexion with Error" line="10">
+<kw name="Log in Myges">
+<arg>prenom</arg>
+<arg>nom</arg>
+<arg>email@gmail.com</arg>
+<arg>monAdresse</arg>
+<arg>ville</arg>
+<arg>75000</arg>
+<arg>0123456789</arg>
+<arg>fakeuser</arg>
+<arg>passwo</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>http://localhost:3000/signup</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230130 19:56:43.442" level="INFO">Opening browser 'chrome' to base url 'http://localhost:3000/signup'.</msg>
+<status status="PASS" starttime="20230130 19:56:43.442" endtime="20230130 19:56:45.553"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Inscription</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230130 19:56:45.553" endtime="20230130 19:56:45.597"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>firstName</arg>
+<arg>${prenom}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230130 19:56:45.598" level="INFO">Typing text 'prenom' into text field 'firstName'.</msg>
+<status status="PASS" starttime="20230130 19:56:45.597" endtime="20230130 19:56:45.725"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>lastName</arg>
+<arg>${nom}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230130 19:56:45.725" level="INFO">Typing text 'nom' into text field 'lastName'.</msg>
+<status status="PASS" starttime="20230130 19:56:45.725" endtime="20230130 19:56:45.837"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>email</arg>
+<arg>${mail}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230130 19:56:45.837" level="INFO">Typing text 'email@gmail.com' into text field 'email'.</msg>
+<status status="PASS" starttime="20230130 19:56:45.837" endtime="20230130 19:56:45.987"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>adress</arg>
+<arg>${adresse}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230130 19:56:45.988" level="INFO">Typing text 'monAdresse' into text field 'adress'.</msg>
+<status status="PASS" starttime="20230130 19:56:45.987" endtime="20230130 19:56:46.117"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>city</arg>
+<arg>${ville}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230130 19:56:46.117" level="INFO">Typing text 'ville' into text field 'city'.</msg>
+<status status="PASS" starttime="20230130 19:56:46.117" endtime="20230130 19:56:46.231"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>postIndex</arg>
+<arg>${codePostale}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230130 19:56:46.232" level="INFO">Typing text '75000' into text field 'postIndex'.</msg>
+<status status="PASS" starttime="20230130 19:56:46.231" endtime="20230130 19:56:46.345"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>phoneNumber</arg>
+<arg>${numero}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230130 19:56:46.346" level="INFO">Typing text '0123456789' into text field 'phoneNumber'.</msg>
+<status status="PASS" starttime="20230130 19:56:46.345" endtime="20230130 19:56:46.483"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>username</arg>
+<arg>${nomUtilisateur}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230130 19:56:46.484" level="INFO">Typing text 'fakeuser' into text field 'username'.</msg>
+<status status="PASS" starttime="20230130 19:56:46.483" endtime="20230130 19:56:46.610"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>password</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20230130 19:56:46.611" level="INFO">Typing password into text field 'password'.</msg>
+<msg timestamp="20230130 19:56:46.657" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20230130 19:56:46.727" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20230130 19:56:46.611" endtime="20230130 19:56:46.727"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>Inscription</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230130 19:56:46.727" level="INFO">Clicking button 'Inscription'.</msg>
+<status status="PASS" starttime="20230130 19:56:46.727" endtime="20230130 19:56:46.811"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Veuillez saisir un mots de passe valide : minimum huit caractères, au moins une lettre et un chiffre</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230130 19:56:46.811" endtime="20230130 19:56:46.823"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230130 19:56:46.823" endtime="20230130 19:56:48.955"/>
+</kw>
+<status status="PASS" starttime="20230130 19:56:43.441" endtime="20230130 19:56:48.955"/>
+</kw>
+<status status="PASS" starttime="20230130 19:56:43.441" endtime="20230130 19:56:48.956"/>
+</test>
+<status status="PASS" starttime="20230130 19:56:32.795" endtime="20230130 19:56:48.957"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="0" skip="0" id="s1" name="IHMTests">IHMTests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
