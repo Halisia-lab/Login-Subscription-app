@@ -4,7 +4,7 @@ Library  SeleniumLibrary
 
 *** Test Cases ***
 Inscription
-    Inscription    prenom  nom    email@gmail.com     monAdresse  ville  75000   0123456789  username  password1234
+    Inscription    prenom  nom    email@gmail.com     monAdresse  ville  75000   0123456788  username  password1234
 Connexion
     Connexion   username  password1234
 Connexion with Error
