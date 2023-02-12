@@ -8,7 +8,7 @@ Inscription
 Connexion
     Connexion   username  password1234
 Connexion with Error
-    Log in Myges    prenom  nom    email@gmail.com     monAdresse  ville  75000   0123456789  useruser  passwo
+    Connexion with Error    prenom  nom    email@gmail.com     monAdresse  ville  75000   0123456789  useruser  passwo
 
 *** Keywords ***
 Inscription
@@ -39,7 +39,7 @@ Connexion
     Wait Until Page Contains    accueil
     Close Browser
 
-Log in Myges
+Connexion with Error
     [Arguments]    ${prenom}    ${nom}       ${mail}     ${adresse}  ${ville}    ${codePostale}  ${numero}   ${nomUtilisateur}      ${password}
     Open Browser  http://localhost:3000/signup  chrome
     Wait Until Page Contains    Inscription
