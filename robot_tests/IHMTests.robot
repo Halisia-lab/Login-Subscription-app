@@ -5,7 +5,7 @@ Library  SeleniumLibrary
 *** Test Cases ***
 Inscription
     Inscription    prenom  nom    email@gmail.com     monAdresse  ville  75000   0123456788  username  password1234
-Connexion
+Connexion utilisateur
     Connexion   username  password1234
 Connexion with Error
     Connexion with Error    prenom  nom    email@gmail.com     monAdresse  ville  75000   0123456789  useruser  passwo
@@ -28,7 +28,7 @@ Inscription
     Wait Until Page Contains    accueil
     Close Browser
 
-Connexion
+Connexion utilisateur
     [Arguments]    ${nomUtilisateur}      ${password}
     Open Browser  http://localhost:3000/login  chrome
     Wait Until Page Contains    Inscription
