@@ -7,7 +7,7 @@ Inscription
     Inscription    prenom  nom    email@gmail.com     monAdresse  ville  75000   0123456788  username  password1234
 Connexion
     Connexion   username  password1234
-Connexion with Error
+Inscription with Error
     Connexion with Error    prenom  nom    email@gmail.com     monAdresse  ville  75000   0123456789  useruser  passwo
 
 *** Keywords ***
@@ -39,7 +39,7 @@ Connexion
     Wait Until Page Contains    accueil
     Close Browser
 
-Connexion with Error
+Inscription with Error
     [Arguments]    ${prenom}    ${nom}       ${mail}     ${adresse}  ${ville}    ${codePostale}  ${numero}   ${nomUtilisateur}      ${password}
     Open Browser  http://localhost:3000/signup  chrome
     Wait Until Page Contains    Inscription
