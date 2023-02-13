@@ -14,7 +14,7 @@ Inscription with Error
 Inscription
     [Arguments]    ${prenom}    ${nom}       ${mail}     ${adresse}  ${ville}    ${codePostale}  ${numero}   ${nomUtilisateur}      ${password}
     Open Browser  http://localhost:3000/signup  chrome
-    Wait Until Page Contains    Inscription
+    Wait Until Page Contains    Connexion
     Input Text    firstName    ${prenom}
     Input Text    lastName    ${nom}
     Input Text    email    ${mail}
